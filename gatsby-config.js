@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Forty V2",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
+    title: "Billy Schulze Profile",
+    author: "Billy Schulze",
+    description: "Profile website of Billy Schulze"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,6 +19,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `vfgdl7bqcgm2`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `29acd2803e61325f870a1e65aacb4ad2319357f4bbb9e5a9187faf4cceb0c0af`,
+      },
+    },
   ],
 }
